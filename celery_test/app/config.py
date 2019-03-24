@@ -19,5 +19,10 @@ class Celery_config(object):
              'task': 'app.tasks.send_mail',
              'schedule': timedelta(seconds=30),
     #         'args': ()
+        },
+         'multiply-at-some-time': {
+            'task': 'celery_app.task.lession',
+            'schedule': crontab(hour=9, minute=50),  # 每天早上 9 点 50 分执行一次
+    #       'args': ()                               # 任务函数参数
         }
     }

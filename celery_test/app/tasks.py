@@ -11,7 +11,7 @@ flask_app.config.update(dict(
     MAIL_USE_SSL = True,
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME'),
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD'),
-    MAIL_DEFAULT_SENDER = 'xxx <xxx@qq.com>'
+    MAIL_DEFAULT_SENDER = ' <xxx@qq.com>'
 ))
 mail = Mail(flask_app)
 
