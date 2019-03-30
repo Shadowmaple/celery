@@ -1,4 +1,14 @@
 # celery
+## 安装
+
+安装celery
+```
+pip3 install celery
+```
+安装redis
+```
+sudo apt-get install redis-server
+```
 
 ## 启动
 
